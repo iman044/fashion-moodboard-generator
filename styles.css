@@ -84,3 +84,26 @@ header h1 {
   margin: 1em 0;
   color: #444;
 }
+.fancy-button {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5a2a00;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+.fancy-button:hover {
+  background: linear-gradient(135deg, #f8b500, #fceabb);
+}
+.button-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
