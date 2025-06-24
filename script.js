@@ -21,19 +21,7 @@ const uploadImages = document.getElementById('uploadImages');
 generateBtn.addEventListener('click', () => {
   moodboard.innerHTML = ''; // Clear existing
   const vibe = vibeInput.value.toLowerCase().trim();
-  // ✨ Add a vibe description
-const description = document.createElement('p');
-description.className = 'vibe-description';
 
-if (vibe === "nyc summer") {
-  description.textContent = "Feminine, bold, and playful — inspired by café mornings and rooftop evenings.";
-} else if (vibe === "cozy fall") {
-  description.textContent = "Layered knits, warm tones, and golden hour walks.";
-} else {
-  description.textContent = "";
-}
-moodboard.appendChild(description);
-if (curatedLookbooks[vibe]) {
   // 🌈 Change background color based on vibe
   if (vibe === "nyc summer") {
     document.body.style.backgroundColor = "#f0f7ff";
@@ -43,16 +31,31 @@ if (curatedLookbooks[vibe]) {
     document.body.style.backgroundColor = "#ffffff";
   }
 
-  // 🖼️ Display the curated images
+  // ✨ Add a vibe description
+  const description = document.createElement('p');
+  description.className = 'vibe-description';
+  if (vibe === "nyc summer") {
+    description.textContent = "Feminine, bold, and playful — inspired by café mornings and rooftop evenings.";
+  } else if (vibe === "cozy fall") {
+    description.textContent = "Layered knits, warm tones, and golden hour walks.";
+  } else {
+    description.textContent = "";
+  }
+  moodboard.appendChild(description);
+
+  // 🖼️ Display the curated images or show message if none found
   if (curatedLookbooks[vibe]) {
-  curatedLookbooks[vibe].forEach(src => {
-    const img = document.createElement('img');
-    img.src = src;
-    moodboard.appendChild(img);
-  });
-} else {
-  moodboard.innerHTML = `<p>No curated lookbook found for "${vibe}". Try "nyc summer" or "cozy fall".</p>`;
-}
+    curatedLookbooks[vibe].forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      moodboard.appendChild(img);
+    });
+  } else {
+    moodboard.innerHTML += `<p>No curated lookbook found for "${vibe}". Try "nyc summer" or "cozy fall".</p>`;
+  }
+});
+
+// Upload images event listener — outside generateBtn click handler
 uploadImages.addEventListener('change', () => {
   const files = uploadImages.files;
   for (let file of files) {
@@ -65,7 +68,8 @@ uploadImages.addEventListener('change', () => {
     reader.readAsDataURL(file);
   }
 });
-// Quick vibe buttons
+
+// Quick vibe buttons event listeners — outside generateBtn click handler
 document.querySelectorAll('.quick-vibe').forEach(button => {
   button.addEventListener('click', () => {
     const vibe = button.getAttribute('data-vibe');
@@ -73,12 +77,13 @@ document.querySelectorAll('.quick-vibe').forEach(button => {
     generateBtn.click(); // Automatically triggers moodboard
   });
 });
+
+// Save button event listener — outside generateBtn click handler
 document.getElementById('saveBtn').addEventListener('click', () => {
-  html2canvas(document.getElementById('lookbook')).then(canvas => {
+  html2canvas(document.getElementById('moodboard')).then(canvas => {
     const link = document.createElement('a');
     link.download = 'moodboard.png';
     link.href = canvas.toDataURL();
     link.click();
   });
 });
-
