@@ -44,19 +44,15 @@ if (curatedLookbooks[vibe]) {
   }
 
   // 🖼️ Display the curated images
+  if (curatedLookbooks[vibe]) {
   curatedLookbooks[vibe].forEach(src => {
     const img = document.createElement('img');
     img.src = src;
     moodboard.appendChild(img);
   });
+} else {
+  moodboard.innerHTML = `<p>No curated lookbook found for "${vibe}". Try "nyc summer" or "cozy fall".</p>`;
 }
-
-    });
-  } else {
-    moodboard.innerHTML = `<p>No curated lookbook found for "${vibe}". Try "nyc summer carrie bradshaw" or "gilmore girls fall cozy".</p>`;
-  }
-});
-
 uploadImages.addEventListener('change', () => {
   const files = uploadImages.files;
   for (let file of files) {
