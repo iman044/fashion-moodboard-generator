@@ -1,0 +1,45 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f9f6f2;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header h1 {
+  text-align: center;
+  color: #bb6b6b;
+  margin-bottom: 1em;
+}
+
+#controls {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+#vibeInput {
+  flex: 1;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+#moodboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1em;
+}
+
+#moodboard img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(187, 107, 107, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#moodboard img:hover {
+  transform: scale(1.05);
+}
