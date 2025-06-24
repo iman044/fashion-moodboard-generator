@@ -1,13 +1,15 @@
 const curatedLookbooks = {
-  "nyc summer carrie bradshaw": [
-    "images/carrie1.jpg",
-    "images/nyc2.jpg",
-    "images/summer3.jpg",
+  "nyc summer": [
+    "nycsummer1.jpg",
+    "nycsummer2.jpg",
+    "nycsummer3.jpg",
+    "nycsummer4.jpg"
   ],
-  "gilmore girls fall cozy": [
-    "images/gilmore1.jpg",
-    "images/fall2.jpg",
-    "images/cozy3.jpg",
+  "cozy fall": [
+    "cozyfall1.jpg",
+    "cozyfall2.jpg",
+    "cozyfall3.jpg",
+    "cozyfall4.jpg"
   ],
 };
 
