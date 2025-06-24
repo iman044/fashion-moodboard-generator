@@ -43,6 +43,7 @@ header h1 {
 #moodboard img:hover {
   transform: scale(1.05);
 }
+
 #quickButtons {
   display: flex;
   justify-content: center;
@@ -63,6 +64,7 @@ header h1 {
 .quick-vibe:hover {
   background-color: #f5c6c6;
 }
+
 .custom-upload {
   display: inline-block;
   background-color: #fbe8e8;
@@ -77,6 +79,7 @@ header h1 {
 .custom-upload:hover {
   background-color: #f5c6c6;
 }
+
 .vibe-description {
   text-align: center;
   font-style: italic;
@@ -84,26 +87,27 @@ header h1 {
   margin: 1em 0;
   color: #444;
 }
+
+/* Classy button style - updated */
 .fancy-button {
-  background: linear-gradient(135deg, #fceabb, #f8b500);
-  border: none;
-  border-radius: 25px;
-  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid #bb6b6b;
+  border-radius: 30px;
+  padding: 10px 30px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #5a2a00;
+  color: #bb6b6b;
   cursor: pointer;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: background 0.3s ease;
+  gap: 8px;
 }
+
 .fancy-button:hover {
-  background: linear-gradient(135deg, #f8b500, #fceabb);
-}
-.button-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+  background-color: #bb6b6b;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(187, 107, 107, 0.3);
 }
