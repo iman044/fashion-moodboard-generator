@@ -45,3 +45,12 @@ uploadImages.addEventListener('change', () => {
     reader.readAsDataURL(file);
   }
 });
+// Quick vibe buttons
+document.querySelectorAll('.quick-vibe').forEach(button => {
+  button.addEventListener('click', () => {
+    const vibe = button.getAttribute('data-vibe');
+    vibeInput.value = vibe;
+    generateBtn.click(); // Automatically triggers moodboard
+  });
+});
+
