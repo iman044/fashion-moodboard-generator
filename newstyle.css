@@ -11,7 +11,6 @@ header h1 {
   text-align: center;
   color: #bb6b6b;
   margin-bottom: 1em;
-  font-weight: 500;
 }
 
 #controls {
@@ -92,27 +91,27 @@ header h1 {
   color: #444;
 }
 
-/* 🎀 Fancy Button Style */
+/* Final classy button style */
 .fancy-button {
-  background: transparent;
+  background-color: #fff;
+  color: #bb6b6b;
   border: 2px solid #bb6b6b;
   border-radius: 30px;
-  padding: 10px 30px;
-  font-size: 1.1rem;
+  padding: 10px 24px;
+  font-size: 1rem;
   font-weight: 600;
-  color: #bb6b6b;
-  cursor: pointer;
   font-family: 'Georgia', serif;
-  letter-spacing: 1.2px;
+  cursor: pointer;
   transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
 }
 
 .fancy-button:hover {
   background-color: #bb6b6b;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(187, 107, 107, 0.3);
+  box-shadow: 0 4px 10px rgba(187, 107, 107, 0.2);
 }
+
+  
+
 
   
