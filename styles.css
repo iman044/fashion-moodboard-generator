@@ -63,3 +63,17 @@ header h1 {
 .quick-vibe:hover {
   background-color: #f5c6c6;
 }
+.custom-upload {
+  display: inline-block;
+  background-color: #fbe8e8;
+  color: #333;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.custom-upload:hover {
+  background-color: #f5c6c6;
+}
