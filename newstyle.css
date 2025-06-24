@@ -1,7 +1,5 @@
 body {
-   border: 5px solid red !important;
-}
-font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   background: #f9f6f2;
   color: #333;
   max-width: 900px;
@@ -13,19 +11,23 @@ header h1 {
   text-align: center;
   color: #bb6b6b;
   margin-bottom: 1em;
+  font-weight: 500;
 }
 
 #controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
   margin-bottom: 1.5em;
 }
 
 #vibeInput {
-  flex: 1;
+  flex: 1 1 200px;
   padding: 0.5em;
   font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 #moodboard {
@@ -90,9 +92,9 @@ header h1 {
   color: #444;
 }
 
-/* Classy button style - updated */
+/* 🎀 Fancy Button Style */
 .fancy-button {
-  background-color: transparent;
+  background: transparent;
   border: 2px solid #bb6b6b;
   border-radius: 30px;
   padding: 10px 30px;
@@ -105,7 +107,6 @@ header h1 {
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
 }
 
 .fancy-button:hover {
@@ -113,3 +114,5 @@ header h1 {
   color: #fff;
   box-shadow: 0 4px 10px rgba(187, 107, 107, 0.3);
 }
+
+  
