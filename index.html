@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
- <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fashion Moodboard Generator</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </head>
 <body>
   <header>
@@ -12,38 +13,30 @@
   </header>
 
   <section id="controls">
-  <label class="custom-upload">
-  Upload Images
-  <input type="file" id="uploadImages" multiple hidden />
-</label>
-<input type="text" id="vibeInput" placeholder="Type a vibe like 'nyc summer' or 'cozy fall'" />
-  <button id="generateBtn" class="fancy-button">
-  🌸 Generate Lookbook
-</button>
-<button id="saveBtn" class="fancy-button">
-  🌼 Save Lookbook
-</button>
-</section>
-<!-- New Buttons -->
-<section id="quickButtons">
-  <button class="quick-vibe" data-vibe="nyc summer">Try NYC Summer</button>
-  <button class="quick-vibe" data-vibe="cozy fall">Try Cozy Fall</button>
-</section>
-<section id="moodboard"></section>
-<script src="script.js"></script>
-    <!-- other content -->
-<footer style="text-align:center; margin-top: 2em; font-size: 0.85rem; color: #666;">
+    <label class="custom-upload">
+      Upload Images
+      <input type="file" id="uploadImages" multiple hidden />
+    </label>
+    <input type="text" id="vibeInput" placeholder="Type a vibe like 'nyc summer' or 'cozy fall'" />
+    <button id="generateBtn" class="fancy-button">
+      🌸 Generate Lookbook
+    </button>
+    <button id="saveBtn" class="fancy-button">
+      🌼 Save Lookbook
+    </button>
+  </section>
+
+  <section id="quickButtons">
+    <button class="quick-vibe" data-vibe="nyc summer">Try NYC Summer</button>
+    <button class="quick-vibe" data-vibe="cozy fall">Try Cozy Fall</button>
+  </section>
+
+  <section id="moodboard"></section>
+
+  <footer style="text-align:center; margin-top: 2em; font-size: 0.85rem; color: #666;">
     <p>Images curated from Pinterest for inspiration and demonstration purposes only.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-<button id="generateBtn" class="fancy-button">
-  <img src="flower-icon.png" alt="flower" class="button-icon" />
-  Generate Lookbook
-</button>
-<button id="saveBtn" class="fancy-button">
-  <img src="flower-icon.png" alt="flower" class="button-icon" />
-  Save Lookbook
-</button>
-
- 
