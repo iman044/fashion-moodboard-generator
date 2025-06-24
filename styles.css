@@ -77,3 +77,10 @@ header h1 {
 .custom-upload:hover {
   background-color: #f5c6c6;
 }
+.vibe-description {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 1em 0;
+  color: #444;
+}
