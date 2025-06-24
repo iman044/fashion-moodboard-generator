@@ -43,3 +43,23 @@ header h1 {
 #moodboard img:hover {
   transform: scale(1.05);
 }
+#quickButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.quick-vibe {
+  background-color: #fbe8e8;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quick-vibe:hover {
+  background-color: #f5c6c6;
+}
